@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Bio Page</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+        }
+
+        html,
+        body {
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        h2 {
+            padding: 20px 0px 15px 0px;
+        }
+
+        p {
+            margin: 10px 0px;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .box-shadow {
+            -webkit-box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 1px 9px -1px rgba(0, 0, 0, 0.75);
+        }
+
+        .grow {
+            transition: all .2s ease-in-out;
+        }
+
+        .grow:hover {
+            transform: scale(1.1);
+        }
+
+        .bio-description {
+            color: #ffff;
+        }
+
+        .main-body-container {
+            background-image: url('./img/Space Wallpaper.jpg');
+            background-image: no-repeat;
+        }
+
+        .main-header,
+        .main-footer {
+            height: 60px;
+            width: 100vw;
+            background-color: #071E78;
+        }
+
+        .logo-text {
+            display: block;
+            padding: 20px;
+            font-weight: bold;
+            font-size: 30px;
+            color: #ffff;
+        }
+
+        .main-container {
+            height: calc(100vh - 150px);
+            width: 90vw;
+            margin: 0px auto;
+        }
+
+        .top-section {
+            width: 100%;
+            background-color: #6081FF;
+            height: 210px;
+            margin: 10px 0px;
+            overflow: hidden;
+        }
+
+        .top-inner-section {
+            overflow: auto;
+        }
+
+        .bottom-section {
+            width: 100%;
+            height: 70%;
+            background-color: #DEE3F6;
+        }
+
+        .sidebar {
+            width: 25%;
+            background-color: #6081FF;
+            height: 100%;
+            float: left;
+        }
+
+
+
+        .gallery {
+            height: 100%;
+            margin-left: 25%;
+            padding: 0px 1em;
+            overflow: auto;
+        }
+
+        .pic-container {
+            height: 100%;
+            float: left;
+            margin-right: 20px;
+        }
+
+        .pic-container>img {
+            object-fit: cover;
+            display: block;
+            width: 190px;
+            margin: 10px;
+        }
+
+        .sidebar>ul {
+            list-style-type: none;
+            background-color: rgba(0, 0, 0, .5);
+        
+        }
+
+        .sidebar>ul>li>a {
+            padding: 15px 20px;
+            display: block;
+            background-color: #6081FF;
+            border: 1px solid #3D4C85;
+            transition-duration: 0.5s;
+            color: #ffff;
+        }
+
+        .sidebar>ul>li a:hover {
+            background-color: #6081FF;
+        }
+
+        .gallery-container {
+            list-style-type: none;
+        }
+
+        .gallery-container>li {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .gallery-container>li>img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .footer-text {
+            text-align: center;
+            display: block;
+            padding: 20px;
+            color: #ffff
+        }
+    </style>
+</head>
+
+<body class="main-body-container">
+    <header class="main-header box-shadow">
+        <span class="logo-text">
+            David Garcia
+        </span>
+    </header>
+    <section class="main-container">
+        <div class="top-section box-shadow">
+            <div class="top-inner-section">
+                <div class="pic-container">
+                    <img src="./img/Profile Picture.jpeg" class="bio-image" alt="my pic">
+                </div>
+                <div class="bio-description">
+                    <h2>Who is David Garcia?</h2>
+                    <p>A little bit about me: I am a huge fan of gaming and watching movies, those are my two primary hobbies.
+                        I've been gaming since 2001, where my first real game was Halo: CE. Ever since then I've been a huge Halo/Xbox fan, but I
+                        also game on most other consoles as well. Going to the movies is something that I do quite often, especially
+                        when a really good one comes out during the weekend. I also have a medium sized collection of my favorite titles
+                        on blu-ray and 4K. 
+                    </p>
+                    <p> This is my last semester before I graduate and get my degree for computer information systems
+                        , something I think I will enjoy for my future career. I am already working in the industry as an IT Help
+                        Desk technician, and have been doing so for the past three years at the same company. When I graduate, I will
+                        be attending specialized classes/traning courses that will help sharpen me up to become a network analyst. 
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="bottom-section box-shadow">
+            <aside class="sidebar">
+                <ul class="list">
+                    <li>
+                        <a href="https://google.com" target="_blank">Google</a>
+                    </li>
+                    <li>
+                        <a href="https://fresnostate.edu/academics/canvas/" target="_blank">Canvas</a>
+                    </li>
+                    <li>
+                        <a href="https://Reddit.com " target="_blank">Reddit</a>
+                    </li>
+                    <li>
+                        <a href="https://YouTube.com" target="_blank">YouTube</a>
+                    </li>
+                    <li>
+                        <a href="https://Spotify.com" target="_blank">Spotify</a>
+                    </li>
+                </ul>
+            </aside>
+            <div class="gallery">
+                <h2>Gallery</h2>
+                <ul class="gallery-container">
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/Xbox Logo.jpg" alt="item1">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/PS Logo.jpg" alt="item1">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/Music Streaming.jpg" alt="item1">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/Camaro.jpg" alt="item1">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/Master Chief.jpg" alt="item1">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/iPhone.jpg" alt="item1">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/Dog.jpeg" alt="item1">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/Diccicos.jpg" alt="item1">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <span class="footer-text">Copyright (C) 2020. Created by David Garcia</span>
+    </footer>
+</body>
+
+</html>
